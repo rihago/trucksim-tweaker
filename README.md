@@ -14,7 +14,7 @@ dotnet run --project src/TruckSimTweaker.Desktop
 
 1. Kies ETS2 of ATS. De app zoekt Steam-installaties in de standaardmap en de geregistreerde Steam-bibliotheken. Kies bij afwijkende installaties zelf de spelmap.
 2. Pak `def.scs` van de gekozen installatie uit naar een aparte map met de [officiële SCS Game Archive Extractor](https://modding.scssoft.com/wiki/Documentation/Tools/Game_Archive_Extractor). Selecteer daarna `def/economy_data.sii` in de app. Gebruik de bron uit dezelfde game en build. De app kan de herkomst van een los bestand niet vaststellen.
-3. Kies per instelling ×1, ×2 of ×5 en controleer de getoonde waarden. Geld wijzigt uitsluitend `revenue_coef_per_km`, de vrachtmarktcoëfficiënt. XP wijzigt uitsluitend `exp_job_distance`, voorlopig behandeld als afstandsgebonden XP. Vaste bedragen, bonussen, andere jobmarkten en afronding kunnen het eindresultaat beïnvloeden.
+3. Kies per instelling ×1, ×2 of ×5 en controleer de getoonde waarden. Geld wijzigt uitsluitend `revenue_coef_per_km`, de vrachtmarktcoëfficiënt. XP wijzigt uitsluitend `exp_cargo_delivery`, voorlopig behandeld als afstandsgebonden XP. Vaste bedragen, bonussen, andere jobmarkten en afronding kunnen het eindresultaat beïnvloeden.
 4. Sla de mod op met een nieuwe naam, plaats hem in de `mod`-map van de gekozen game en activeer hem in Mod Manager op een testprofiel. Gebruik één economy-mod tegelijk. De export overschrijft de hele `def/economy_data.sii` binnen de virtuele spelbestanden. Genereer hem opnieuw na een game-update.
 
 ## Architectuur
