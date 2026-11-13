@@ -43,7 +43,7 @@ public static class Economy
         var changes = new List<Change>();
         var edits = new List<(int Offset, string Before, string After)>();
         var body = structure.Groups["body"];
-        foreach (var (field, factor) in new[] { ("revenue_coef_per_km", money), ("exp_job_distance", xp) })
+        foreach (var (field, factor) in new[] { ("revenue_coef_per_km", money), ("exp_cargo_delivery", xp) })
         {
             var matches = Regex.Matches(body.Value, @"(?m)^[ \t]*" + field + @"[ \t]*:[ \t]*(?<value>[^\r\n]*)",
                 RegexOptions.CultureInvariant, Timeout);
