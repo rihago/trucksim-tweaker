@@ -11,9 +11,9 @@ try
         SiiNunit
         {
         economy_data : economy.data {
-          /* exp_job_distance: 999 */
+          /* exp_cargo_delivery: 999 */
           revenue_coef_per_km: 1.25 # geld
-          exp_job_distance: 2
+          exp_cargo_delivery: 2
           test_label: "example { } @"
           unrelated: 100
         }
@@ -22,7 +22,7 @@ try
     File.WriteAllText(source, original);
     Require(Economy.Read(source, 1, 1).Contents == original, "×1 preserves input text");
     var preview = Economy.Read(source, 2, 5);
-    var expected = original.Replace("1.25 #", "2.5 #").Replace("exp_job_distance: 2", "exp_job_distance: 10");
+    var expected = original.Replace("1.25 #", "2.5 #").Replace("exp_cargo_delivery: 2", "exp_cargo_delivery: 10");
     Require(preview.Contents == expected, "×2/×5, invariant decimals and text preservation");
     Require(File.ReadAllText(source) == original, "input remains byte-for-byte intact");
     foreach (var game in new[] { Game.Ets2, Game.Ats })
@@ -41,9 +41,9 @@ try
 
     foreach (var invalid in new[]
     {
-        original.Replace("exp_job_distance: 2", "other_xp: 2"),
-        original.Replace("exp_job_distance: 2", "exp_job_distance: 2\n exp_job_distance: 3"),
-        original.Replace("exp_job_distance: 2", "exp_job_distance: 2.0oops"),
+        original.Replace("exp_cargo_delivery: 2", "other_xp: 2"),
+        original.Replace("exp_cargo_delivery: 2", "exp_cargo_delivery: 2\n exp_cargo_delivery: 3"),
+        original.Replace("exp_cargo_delivery: 2", "exp_cargo_delivery: 2.0oops"),
         original.Replace("unrelated: 100", "@include \"extra.sii\""),
         new string(' ', 1024 * 1024 + 1),
         "ScsC"
