@@ -27,3 +27,7 @@ Kies ETS2 of ATS en noteer de exacte gamebuild. Importeer `def/economy_data.sii`
 
 - Houd twee onafhankelijke .scs-mods aan. De vrachtwagenmod past `def/economy_data.sii` aan. Coaches Levels past `def/bus_economy_data_xp.sii` aan. Beide kunnen tegelijk actief zijn.
 - Onderzoek een aparte functie in de Windows-app om geld of XP direct aan een lokale save toe te voegen. Begin met één ETS2-testsave en bevestig eerst formaat, saldo en afzonderlijke vrachtwagen- en Coaches-XP. Voeg schrijven pas toe na een geteste back-up, validatie en herstel. De officiële SCS Telemetry & Input SDK documenteert geen schrijffunctie voor deze profielwaarden. Een live knop in ETS2 is vooralsnog onbevestigd.
+
+### Coaches-geldtest ETS2 1.62.3.3s
+
+Een lokale mod voegt `fixed_revenue: 1200` en `revenue_per_km: 30.0` toe aan de originele `def/bus_economy_data.sii`. De gamelog bevestigde dat de mod geladen was. Screenshots van dezelfde Snelle opdrachten tonen zonder/met mod: Amsterdam–Brussel €5.625 → €11.250 en Amsterdam–Düsseldorf €6.075 → €12.150, beide €15/km → €30/km. De aangeboden prijs verdubbelt. Uitbetaling na afronding, andere opdrachttypes en de bijdrage van het vaste veld afzonderlijk zijn nog niet gemeten.
