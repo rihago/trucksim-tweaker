@@ -17,3 +17,8 @@ GitHub bevat broncode, tests, documentatie en de gepushte geschiedenis. Bewaar w
 ## Eerstvolgende test
 
 Kies ETS2 of ATS en noteer de exacte gamebuild. Importeer `def/economy_data.sii` uit die installatie en genereer op een testprofiel een mod met geld ×2 en XP ×5. Controleer of hij verschijnt in Mod Manager en vergelijk een lokale vrachtmarktrit met een vergelijkbare ×1/×1-rit. Noteer de previewwaarden, uitbetaling, afstands-XP en bonussen. Voeg bij laadproblemen de relevante regels uit `game.log.txt` toe aan een issue. Herhaal daarna voor de andere game.
+
+## Speltest ETS2 1.62.3.3s (64-bit)
+
+- Vrachtwagen-XP ×5 bevestigd bij een Snelle opdracht: 149 km gaf 745 basis-XP en 15 XP parkeerbonus. Geld ×2 op de Vrachtmarkt moet nog worden gemeten.
+- De aparte Coaches-testmod verlaagt de waarden in `def/bus_economy_data_xp.sii` tot een vijfde. De gamelog bevestigde dat de mod geladen was en het voortgangsscherm toonde op level 0 **0 / 40 XP**. De standaardwaarde in het uitgepakte spelbestand is 200 XP. XP-beloning per coachrit en coachinkomsten blijven onderzoek.
