@@ -22,3 +22,8 @@ Kies ETS2 of ATS en noteer de exacte gamebuild. Importeer `def/economy_data.sii`
 
 - Vrachtwagen-XP ×5 bevestigd bij een Snelle opdracht: 149 km gaf 745 basis-XP en 15 XP parkeerbonus. Geld ×2 op de Vrachtmarkt moet nog worden gemeten.
 - De aparte Coaches-testmod verlaagt de waarden in `def/bus_economy_data_xp.sii` tot een vijfde. De gamelog bevestigde dat de mod geladen was en het voortgangsscherm toonde op level 0 **0 / 40 XP**. De standaardwaarde in het uitgepakte spelbestand is 200 XP. XP-beloning per coachrit en coachinkomsten blijven onderzoek.
+
+## Modindeling en directe profielwijzigingen
+
+- Houd twee onafhankelijke .scs-mods aan. De vrachtwagenmod past `def/economy_data.sii` aan. Coaches Levels past `def/bus_economy_data_xp.sii` aan. Beide kunnen tegelijk actief zijn.
+- Onderzoek een aparte functie in de Windows-app om geld of XP direct aan een lokale save toe te voegen. Begin met één ETS2-testsave en bevestig eerst formaat, saldo en afzonderlijke vrachtwagen- en Coaches-XP. Voeg schrijven pas toe na een geteste back-up, validatie en herstel. De officiële SCS Telemetry & Input SDK documenteert geen schrijffunctie voor deze profielwaarden. Een live knop in ETS2 is vooralsnog onbevestigd.
