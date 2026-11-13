@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="src/TruckSimTweaker.Core/TruckSimTweaker.Core.csproj" />
+  <Project Path="src/TruckSimTweaker.Desktop/TruckSimTweaker.Desktop.csproj" />
+  <Project Path="tests/TruckSimTweaker.Tests/TruckSimTweaker.Tests.csproj" />
+</Solution>

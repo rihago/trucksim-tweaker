@@ -1,0 +1,6 @@
+bin/
+obj/
+*.scs
+economy_data.sii
+*.suo
+.vs/

@@ -1,0 +1,27 @@
+<Window x:Class="TruckSimTweaker.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="TruckSim Tweaker" Width="640" MinWidth="460" SizeToContent="Height">
+  <StackPanel Margin="28">
+    <TextBlock Text="TruckSim Tweaker" FontSize="28" FontWeight="SemiBold" Margin="0,0,0,18"/>
+    <TextBlock Text="Spel"/>
+    <ComboBox x:Name="Games" Margin="0,4,0,8" SelectionChanged="GameChanged" AutomationProperties.Name="Spel"/>
+    <TextBlock x:Name="Installation" TextWrapping="Wrap" Margin="0,0,0,8"/>
+    <Button Content="Spelmap kiezen" Click="ChooseInstallation" HorizontalAlignment="Left" Padding="10,5"/>
+    <Button Content="Uitgepakte economy_data.sii openen" Click="ChooseEconomy" HorizontalAlignment="Left" Padding="10,5" Margin="0,14,0,0"/>
+    <TextBlock x:Name="InputFile" TextWrapping="Wrap" Margin="0,6,0,12"/>
+    <StackPanel Orientation="Horizontal">
+      <StackPanel Margin="0,0,20,0">
+        <TextBlock Text="Geld · vrachtmarkt"/>
+        <ComboBox x:Name="Money" SelectionChanged="RefreshPreview" AutomationProperties.Name="Geld"/>
+      </StackPanel>
+      <StackPanel>
+        <TextBlock Text="XP · afstand"/>
+        <ComboBox x:Name="Xp" SelectionChanged="RefreshPreview" AutomationProperties.Name="XP"/>
+      </StackPanel>
+    </StackPanel>
+    <TextBlock x:Name="PreviewText" TextWrapping="Wrap" Margin="0,16,0,10"/>
+    <Button x:Name="ExportButton" Content=".scs opslaan" Click="Export" IsEnabled="False" HorizontalAlignment="Left" Padding="14,7"/>
+    <TextBlock x:Name="Status" TextWrapping="Wrap" Margin="0,10,0,0"/>
+  </StackPanel>
+</Window>
