@@ -31,3 +31,11 @@ Kies ETS2 of ATS en noteer de exacte gamebuild. Importeer `def/economy_data.sii`
 ### Coaches-geldtest ETS2 1.62.3.3s
 
 Een lokale mod voegt `fixed_revenue: 1200` en `revenue_per_km: 30.0` toe aan de originele `def/bus_economy_data.sii`. De gamelog bevestigde dat de mod geladen was. Screenshots van dezelfde Snelle opdrachten tonen zonder/met mod: Amsterdam–Brussel €5.625 → €11.250 en Amsterdam–Düsseldorf €6.075 → €12.150, beide €15/km → €30/km. De aangeboden prijs verdubbelt. Uitbetaling na afronding, andere opdrachttypes en de bijdrage van het vaste veld afzonderlijk zijn nog niet gemeten.
+
+## Gecombineerde Workshop-pakketten
+
+De beoogde publicatie is één item per spel. Gebruik `workshop/Build-CombinedTest.ps1` met de uitgepakte definities van de juiste builds, voeg een JPG van 276 × 162 toe als `mod_icon.jpg` en exporteer met `workshop/Export-CombinedWorkshop.ps1`. Selecteer de map `upload` en de bijbehorende `preview.jpg` in SCS Workshop Uploader.
+
+- ETS2 1.62.3.3: Coaches Snelle opdracht Amsterdam–Düsseldorf betaalde €12.150 met de gecombineerde mod. Het oorspronkelijke aanbod was €6.075. Coaches-basis-XP bleef 1/km. De aangepaste XP-bonussen vragen een vergelijkende test. Truck-afstands-XP ×5 is eerder bevestigd in de losse mod.
+- ATS 1.62.2.2: Road Trip vaste en kilometerbeloning ×2. Ratingdrempels voor opdrachten en tiers zijn met een halve ster verlaagd. Speltest staat open.
+- Beide pakketten wachten op validatie in SCS Workshop Uploader. Begin privé, met oudere lokale varianten uitgeschakeld op het testprofiel.
